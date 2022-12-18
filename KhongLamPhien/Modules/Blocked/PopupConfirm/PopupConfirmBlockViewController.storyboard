@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Popup Confirm Block View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PopupConfirmBlockViewController" id="Y6W-OH-hqX" customClass="PopupConfirmBlockViewController" customModule="KhongLamPhien" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Block phone number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tg6-u5-slO">
+                                <rect key="frame" x="10" y="215.66666666666663" width="373" height="19.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Enter the phone number you want to block" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbM-Jd-NR3">
+                                <rect key="frame" x="10" y="245" width="373" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fP6-Bo-u25">
+                                <rect key="frame" x="10" y="272" width="373" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZYm-Eb-Vle">
+                                        <rect key="frame" x="20" y="0.0" width="333" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="dIR-DD-2x6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ZYm-Eb-Vle" secondAttribute="bottom" id="3vC-15-VWC"/>
+                                    <constraint firstItem="ZYm-Eb-Vle" firstAttribute="top" secondItem="fP6-Bo-u25" secondAttribute="top" id="f6x-hS-nsY"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZYm-Eb-Vle" secondAttribute="trailing" constant="20" id="meQ-EU-pCw"/>
+                                    <constraint firstItem="ZYm-Eb-Vle" firstAttribute="leading" secondItem="fP6-Bo-u25" secondAttribute="leading" constant="20" id="ovc-D6-jpa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rCD-fg-vba">
+                                <rect key="frame" x="10" y="336" width="373" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXc-ho-YqJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="181.66666666666666" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="pcH-MD-RxI"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Close">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="baseForegroundColor" red="0.82932728529999999" green="0.38114559650000002" blue="0.36076617239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.82932728529999999" green="0.38114559650000002" blue="0.36076617239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onSelectCloseButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7Bm-jM-GpO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNO-wc-jGj">
+                                        <rect key="frame" x="191.66666666666663" y="0.0" width="181.33333333333337" height="44"/>
+                                        <color key="backgroundColor" red="0.82932728529999999" green="0.38114559650000002" blue="0.36076617239999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Block">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onSelectBlockButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rDM-Ti-GBo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rCD-fg-vba" secondAttribute="trailing" constant="10" id="1PT-iq-FGz"/>
+                            <constraint firstAttribute="bottom" secondItem="rCD-fg-vba" secondAttribute="bottom" constant="20" id="4bu-l4-7kU"/>
+                            <constraint firstAttribute="trailing" secondItem="Tg6-u5-slO" secondAttribute="trailing" constant="10" id="D2o-ak-K03"/>
+                            <constraint firstItem="Tg6-u5-slO" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="20" id="FHD-O0-QHK"/>
+                            <constraint firstItem="fP6-Bo-u25" firstAttribute="top" secondItem="pbM-Jd-NR3" secondAttribute="bottom" constant="10" id="FWn-t6-UXZ"/>
+                            <constraint firstAttribute="trailing" secondItem="pbM-Jd-NR3" secondAttribute="trailing" constant="10" id="GTo-xj-1zw"/>
+                            <constraint firstItem="rCD-fg-vba" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="10" id="Vab-mo-pDR"/>
+                            <constraint firstItem="Tg6-u5-slO" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="10" id="bg5-vD-Swj"/>
+                            <constraint firstItem="rCD-fg-vba" firstAttribute="top" secondItem="fP6-Bo-u25" secondAttribute="bottom" constant="20" id="kWZ-65-AYo"/>
+                            <constraint firstItem="fP6-Bo-u25" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="10" id="q1b-hT-GOT"/>
+                            <constraint firstItem="pbM-Jd-NR3" firstAttribute="top" secondItem="Tg6-u5-slO" secondAttribute="bottom" constant="10" id="qcy-1T-dS3"/>
+                            <constraint firstItem="pbM-Jd-NR3" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="10" id="uib-kS-suU"/>
+                            <constraint firstAttribute="trailing" secondItem="fP6-Bo-u25" secondAttribute="trailing" constant="10" id="wJF-M6-VxO"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="36"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <size key="freeformSize" width="393" height="400"/>
+                    <connections>
+                        <outlet property="phoneNumberTF" destination="ZYm-Eb-Vle" id="87V-Mc-YI4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

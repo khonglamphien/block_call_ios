@@ -1,0 +1,6 @@
+framework module Pods_KhongLamPhienTests {
+  umbrella header "Pods-KhongLamPhienTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

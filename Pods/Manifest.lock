@@ -1,0 +1,119 @@
+PODS:
+  - AFDateHelper (4.3.0)
+  - Alamofire (5.6.4)
+  - DeviceKit (5.0.0)
+  - DynamicBlurView (4.1.0)
+  - ESTabBarController-swift (2.8.0)
+  - IQKeyboardManagerSwift (6.5.10)
+  - KeychainAccess (4.2.2)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - NVActivityIndicatorView/Extended (5.1.1):
+    - NVActivityIndicatorView/Base
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
+  - PromiseKit (6.18.1):
+    - PromiseKit/CorePromise (= 6.18.1)
+    - PromiseKit/Foundation (= 6.18.1)
+    - PromiseKit/UIKit (= 6.18.1)
+  - PromiseKit/CorePromise (6.18.1)
+  - PromiseKit/Foundation (6.18.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.18.1):
+    - PromiseKit/CorePromise
+  - RMActionController (1.3.1)
+  - RMDateSelectionViewController (2.3.1):
+    - RMActionController (~> 1.3.1)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SwiftGen (6.6.2)
+  - SwiftLint (0.50.1)
+  - SwiftyBeaver (1.9.5)
+  - SwiftyJSON (5.0.1)
+  - Toast-Swift (5.0.1)
+  - UIColor_Hex_Swift (5.1.7)
+
+DEPENDENCIES:
+  - AFDateHelper
+  - Alamofire
+  - DeviceKit
+  - ESTabBarController-swift
+  - IQKeyboardManagerSwift
+  - KeychainAccess
+  - Moya
+  - Moya/RxSwift
+  - NVActivityIndicatorView/Extended
+  - PopupDialog (~> 1.1)
+  - PromiseKit
+  - RMDateSelectionViewController
+  - RxCocoa
+  - RxSwift
+  - SwiftGen (~> 6.0)
+  - SwiftLint
+  - SwiftyBeaver
+  - SwiftyJSON
+  - Toast-Swift
+  - UIColor_Hex_Swift
+
+SPEC REPOS:
+  trunk:
+    - AFDateHelper
+    - Alamofire
+    - DeviceKit
+    - DynamicBlurView
+    - ESTabBarController-swift
+    - IQKeyboardManagerSwift
+    - KeychainAccess
+    - Moya
+    - NVActivityIndicatorView
+    - PopupDialog
+    - PromiseKit
+    - RMActionController
+    - RMDateSelectionViewController
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftGen
+    - SwiftLint
+    - SwiftyBeaver
+    - SwiftyJSON
+    - Toast-Swift
+    - UIColor_Hex_Swift
+
+SPEC CHECKSUMS:
+  AFDateHelper: b769c07d3d4784ee9a74633285304261bb27dc52
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  DeviceKit: 0fd016a2cb67aca17c33dc23171cac270131eb88
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
+  ESTabBarController-swift: 05593a6ad64700b03c0eb60ff625916370aa4136
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
+  PromiseKit: 49d70c53d5d20e346beaea4b276b5dd2ab446bb4
+  RMActionController: 535715be9f3d9eb96a838485370dcccee0dda597
+  RMDateSelectionViewController: 1157d34245e6a1dda700e8a9c44417321d181951
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
+  SwiftLint: 6b0cf1f4d619808dbc16e4fab064ce6fc79f090b
+  SwiftyBeaver: 84069991dd5dca07d7069100985badaca7f0ce82
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  UIColor_Hex_Swift: 31cd3e47440f07a20d2503a36bb0437a445b3c29
+
+PODFILE CHECKSUM: ef8f96c6fa5a032cc7770fa63db77d3fccae5c87
+
+COCOAPODS: 1.11.3
