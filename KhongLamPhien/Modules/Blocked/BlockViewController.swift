@@ -13,6 +13,7 @@ class BlockViewController: BaseViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var viewCheckPermision: UIView!
     
     var listBlock = [String]()
     
@@ -28,6 +29,21 @@ class BlockViewController: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        CXCallDirectoryManager.sharedInstance.reloadExtension(withIdentifier: "anhnhn.KhongLamPhiens.CallBlock", completionHandler: { (error) -> Void in
+            DispatchQueue.main.async {
+                self.tableView.isHidden = false
+            }
+            
+            if let error = error {
+                print( "======", error, "==", error.localizedDescription)
+                
+                if error.localizedDescription == "The operation couldn’t be completed. (com.apple.CallKit.error.calldirectorymanager error 6.)" {
+                    DispatchQueue.main.async {
+                        self.tableView.isHidden = true
+                    }
+                }
+            }
+        })
         listBlock = getBlockedContacts()
         tableView.reloadData()
     }
@@ -37,13 +53,8 @@ class BlockViewController: BaseViewController {
     }
     
     func syncUD() {
-        //save blocklist in userdefaults
         updateBlockedContactsList(contacts: listBlock)
-        print("abc123=====llddđ", getBlockedContacts())
-        //reload extension to update blocklist entries
-        
         CXCallDirectoryManager.sharedInstance.reloadExtension(withIdentifier: "anhnhn.KhongLamPhiens.CallBlock", completionHandler: { (error) -> Void in
-            print( "======seeee")
             if let error = error {
                 print( "======", error.localizedDescription)
             }
@@ -74,6 +85,13 @@ class BlockViewController: BaseViewController {
         present(dialog, animated: true, completion: nil)
     }
     
+    @IBAction func onSelectOpenSettingButton(_ sender: Any) {
+        let url = URL(string: "App-Prefs:root=Phone&path=Call_Blocking_&_Identification")
+        if UIApplication.shared.canOpenURL(url!) {
+            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+        }
+
+    }
 }
 
 extension BlockViewController: UITableViewDataSource, UITableViewDelegate {
@@ -99,6 +117,19 @@ extension BlockViewController: UITableViewDataSource, UITableViewDelegate {
         }
         let dialog = PopupDialog(viewController: alertViewController)
         present(dialog, animated: true, completion: nil)
+    }
+    
+}
+
+extension BlockViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        listBlock = getBlockedContacts()
+        listBlock = searchText.isEmpty ? listBlock : listBlock.filter { (item: String) -> Bool in
+            return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+        }
+        
+        tableView.reloadData()
     }
     
 }

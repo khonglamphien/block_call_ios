@@ -41,6 +41,7 @@ extension SearchViewController {
             guard let self = self else { return }
             self.dataSearch = response.data
             self.tableView.reloadData()
+            self.tableView.isHidden = response.data.isEmpty
         }).disposed(by: disposeBag)
         
         viewModel.responseSubject.subscribe(onNext: { (message) in
@@ -62,7 +63,7 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
         let data = dataSearch[indexPath.row]
         cell.phoneNumberLabel.text = data.phoneNumber
         cell.nameLabel.text = ""
-        cell.nextButton.setImage(UIImage(named: "next_icon"), for: .normal)
+        cell.imageRight.image = UIImage(named: "next_icon")
         return cell
     }
     

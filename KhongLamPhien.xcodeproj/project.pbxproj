@@ -10,6 +10,10 @@
 		443D37F588FD9FFC3EC5E997 /* Pods_KhongLamPhienTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E87B916BDEEFD4619FE1890 /* Pods_KhongLamPhienTests.framework */; };
 		4B9AB7872AA75ADD2A410704 /* Pods_KhongLamPhien_KhongLamPhienUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0A133A069C5F3BEFFF2D39 /* Pods_KhongLamPhien_KhongLamPhienUITests.framework */; };
 		6BB75030DF3CBB6FC023F8D4 /* Pods_KhongLamPhien.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860FE59B3B1ECE4D947F9A54 /* Pods_KhongLamPhien.framework */; };
+		A4B41E9529523D0800E02260 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B41E9429523D0800E02260 /* WebViewViewController.swift */; };
+		A4B41E9729523D1900E02260 /* WebViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B41E9629523D1900E02260 /* WebViewViewController.storyboard */; };
+		A4B41E9929523FA900E02260 /* term.html in Resources */ = {isa = PBXBuildFile; fileRef = A4B41E9829523FA900E02260 /* term.html */; };
+		A4CEA13C2952F19500B33192 /* terms.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A4CEA13B2952F19500B33192 /* terms.rtf */; };
 		A4E997A92948789A00A2A367 /* BlockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E997A72948789A00A2A367 /* BlockTableViewCell.swift */; };
 		A4E997AA2948789A00A2A367 /* BlockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4E997A82948789A00A2A367 /* BlockTableViewCell.xib */; };
 		A4E997AC2949AA5300A2A367 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E997AB2949AA5300A2A367 /* SearchViewController.swift */; };
@@ -36,6 +40,8 @@
 		A4E998A6294D88C400A2A367 /* PopupUnblockViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E998A5294D88C400A2A367 /* PopupUnblockViewController.storyboard */; };
 		A4E998A8294D88E300A2A367 /* ProtectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E998A7294D88E300A2A367 /* ProtectionViewController.swift */; };
 		A4E998AA294D88F000A2A367 /* ProtectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E998A9294D88F000A2A367 /* ProtectionViewController.storyboard */; };
+		A4E998AD2950515500A2A367 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E998AC2950515500A2A367 /* ContactDetailViewController.swift */; };
+		A4E998AF2950516300A2A367 /* ContactDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E998AE2950516300A2A367 /* ContactDetailViewController.storyboard */; };
 		A4FE53C929419694003FC150 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE53C829419694003FC150 /* AppDelegate.swift */; };
 		A4FE53CB29419694003FC150 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE53CA29419694003FC150 /* SceneDelegate.swift */; };
 		A4FE53CD29419694003FC150 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE53CC29419694003FC150 /* ViewController.swift */; };
@@ -109,6 +115,10 @@
 		6FDC88398334D73E9967C28D /* Pods-KhongLamPhienTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhongLamPhienTests.release.xcconfig"; path = "Target Support Files/Pods-KhongLamPhienTests/Pods-KhongLamPhienTests.release.xcconfig"; sourceTree = "<group>"; };
 		860FE59B3B1ECE4D947F9A54 /* Pods_KhongLamPhien.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KhongLamPhien.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20ABEED594AA7D3419989E7 /* Pods-KhongLamPhien-KhongLamPhienUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhongLamPhien-KhongLamPhienUITests.debug.xcconfig"; path = "Target Support Files/Pods-KhongLamPhien-KhongLamPhienUITests/Pods-KhongLamPhien-KhongLamPhienUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4B41E9429523D0800E02260 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		A4B41E9629523D1900E02260 /* WebViewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewViewController.storyboard; sourceTree = "<group>"; };
+		A4B41E9829523FA900E02260 /* term.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = term.html; sourceTree = "<group>"; };
+		A4CEA13B2952F19500B33192 /* terms.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = terms.rtf; sourceTree = "<group>"; };
 		A4E997A72948789A00A2A367 /* BlockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTableViewCell.swift; sourceTree = "<group>"; };
 		A4E997A82948789A00A2A367 /* BlockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlockTableViewCell.xib; sourceTree = "<group>"; };
 		A4E997AB2949AA5300A2A367 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +148,8 @@
 		A4E998A5294D88C400A2A367 /* PopupUnblockViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopupUnblockViewController.storyboard; sourceTree = "<group>"; };
 		A4E998A7294D88E300A2A367 /* ProtectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectionViewController.swift; sourceTree = "<group>"; };
 		A4E998A9294D88F000A2A367 /* ProtectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProtectionViewController.storyboard; sourceTree = "<group>"; };
+		A4E998AC2950515500A2A367 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+		A4E998AE2950516300A2A367 /* ContactDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactDetailViewController.storyboard; sourceTree = "<group>"; };
 		A4FE53C529419694003FC150 /* KhongLamPhien.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KhongLamPhien.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FE53C829419694003FC150 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4FE53CA29419694003FC150 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -310,6 +322,15 @@
 			path = PopupUnblock;
 			sourceTree = "<group>";
 		};
+		A4E998AB2950513700A2A367 /* ContactDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A4E998AC2950515500A2A367 /* ContactDetailViewController.swift */,
+				A4E998AE2950516300A2A367 /* ContactDetailViewController.storyboard */,
+			);
+			path = ContactDetail;
+			sourceTree = "<group>";
+		};
 		A4FE53BC29419694003FC150 = {
 			isa = PBXGroup;
 			children = (
@@ -368,6 +389,7 @@
 		A4FE53F82941DBE5003FC150 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A4B41E9829523FA900E02260 /* term.html */,
 				A4FE53C829419694003FC150 /* AppDelegate.swift */,
 				A4FE53CA29419694003FC150 /* SceneDelegate.swift */,
 				A4FE53CC29419694003FC150 /* ViewController.swift */,
@@ -376,6 +398,7 @@
 				A4FE53D329419696003FC150 /* LaunchScreen.storyboard */,
 				A4FE53D629419696003FC150 /* Info.plist */,
 				A4FE54112941F441003FC150 /* CallBlock-Bridging-Header.h */,
+				A4CEA13B2952F19500B33192 /* terms.rtf */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -474,6 +497,7 @@
 		A4FE54042941F214003FC150 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				A4E998AB2950513700A2A367 /* ContactDetail */,
 				A4E99877294B2F0500A2A367 /* ContactViewController.swift */,
 				A4E99879294B2F1300A2A367 /* ContactViewController.storyboard */,
 			);
@@ -485,6 +509,8 @@
 			children = (
 				A4E998A7294D88E300A2A367 /* ProtectionViewController.swift */,
 				A4E998A9294D88F000A2A367 /* ProtectionViewController.storyboard */,
+				A4B41E9429523D0800E02260 /* WebViewViewController.swift */,
+				A4B41E9629523D1900E02260 /* WebViewViewController.storyboard */,
 			);
 			path = Protection;
 			sourceTree = "<group>";
@@ -669,11 +695,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4FE54152942E36F003FC150 /* HomeViewController.storyboard in Resources */,
+				A4E998AF2950516300A2A367 /* ContactDetailViewController.storyboard in Resources */,
 				A4E997AA2948789A00A2A367 /* BlockTableViewCell.xib in Resources */,
 				A4E99876294B0B8B00A2A367 /* SearchDetailTableViewCell.xib in Resources */,
 				A4FE53D529419696003FC150 /* LaunchScreen.storyboard in Resources */,
 				A4E998AA294D88F000A2A367 /* ProtectionViewController.storyboard in Resources */,
 				A4E99871294B048800A2A367 /* SearchDetailViewController.storyboard in Resources */,
+				A4B41E9929523FA900E02260 /* term.html in Resources */,
+				A4CEA13C2952F19500B33192 /* terms.rtf in Resources */,
 				A4E997AE2949AA6000A2A367 /* SearchViewController.storyboard in Resources */,
 				A4FE542829432B67003FC150 /* LaunchViewController.storyboard in Resources */,
 				A4FE53D229419696003FC150 /* Assets.xcassets in Resources */,
@@ -681,6 +710,7 @@
 				A4E998A1294D7B8800A2A367 /* PopupConfirmBlockViewController.storyboard in Resources */,
 				A4FE5423294327AA003FC150 /* BlockViewController.storyboard in Resources */,
 				A4FE53D029419694003FC150 /* Main.storyboard in Resources */,
+				A4B41E9729523D1900E02260 /* WebViewViewController.storyboard in Resources */,
 				A4E998A6294D88C400A2A367 /* PopupUnblockViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -821,6 +851,7 @@
 				A4E998622949BC6D00A2A367 /* ServiceHelper.swift in Sources */,
 				A4E998A4294D88B800A2A367 /* PopupUnblockViewController.swift in Sources */,
 				A4FE541F2942EB11003FC150 /* SKUIView+Extension.swift in Sources */,
+				A4B41E9529523D0800E02260 /* WebViewViewController.swift in Sources */,
 				A4FE54212943279B003FC150 /* BlockViewController.swift in Sources */,
 				A4FE540A2941F351003FC150 /* Button.swift in Sources */,
 				A4FE54002941F166003FC150 /* Session.swift in Sources */,
@@ -836,6 +867,7 @@
 				A4E9986C294AFC9E00A2A367 /* SearchModel.swift in Sources */,
 				A4E99875294B0B8B00A2A367 /* SearchDetailTableViewCell.swift in Sources */,
 				A4FE54172942E44A003FC150 /* SKUIStoryboard+Ext.swift in Sources */,
+				A4E998AD2950515500A2A367 /* ContactDetailViewController.swift in Sources */,
 				A4E998652949CEB400A2A367 /* SearchApi.swift in Sources */,
 				A4FE53C929419694003FC150 /* AppDelegate.swift in Sources */,
 				A4FE54132942E35A003FC150 /* HomeViewController.swift in Sources */,
@@ -1092,6 +1124,7 @@
 				DEVELOPMENT_TEAM = 9CB8APPT27;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KhongLamPhien/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Block Broker";
 				INFOPLIST_KEY_NSContactsUsageDescription = "You have to describe the real usage for a human.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -1126,6 +1159,7 @@
 				DEVELOPMENT_TEAM = 9CB8APPT27;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KhongLamPhien/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Block Broker";
 				INFOPLIST_KEY_NSContactsUsageDescription = "You have to describe the real usage for a human.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

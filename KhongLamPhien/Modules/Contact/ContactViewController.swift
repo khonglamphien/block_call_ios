@@ -19,15 +19,6 @@ class ContactViewController: BaseViewController {
         super.viewDidLoad()
         contacts = self.getContactFromCNContact()
         tableView.reloadData()
-            for contact in contacts {
-
-                print("==========")
-                
-                print(contact.familyName)
-                print(contact.givenName)
-                print(contact.middleName)
-                
-            }
         setupView()
     }
     
@@ -47,7 +38,8 @@ class ContactViewController: BaseViewController {
             CNContactNamePrefixKey,
             CNContactNicknameKey,
             CNContactNameSuffixKey,
-            CNContactDepartmentNameKey
+            CNContactDepartmentNameKey,
+            CNContactPhoneNumbersKey
             ] as [Any]
 
         //Get all the containers
@@ -59,8 +51,6 @@ class ContactViewController: BaseViewController {
         }
 
         var results: [CNContact] = []
-
-        // Iterate all containers and append their contacts to our results array
         for container in allContainers {
 
             let fetchPredicate = CNContact.predicateForContactsInContainer(withIdentifier: container.identifier)
@@ -91,8 +81,15 @@ extension ContactViewController: UITableViewDataSource, UITableViewDelegate {
         cell.phoneNumberLabel.text = "\(data.familyName) \(data.givenName)"
         cell.nameLabel.text = ""
         cell.leftView.isHidden = false
-        cell.nextButton.setImage(UIImage(named: "next_icon"), for: .normal)
+        cell.imageRight.image = UIImage(named: "next_icon")
+        cell.leftLabel.text = "\(data.familyName.prefix(1))\(data.givenName.prefix(1))"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let contactDetailVC = UIStoryboard.storyBoard("ContactDetailViewController").viewController(of: ContactDetailViewController.self)
+        contactDetailVC.contact = contacts[indexPath.row]
+        navigationController?.pushViewController(contactDetailVC, animated: true)
     }
     
 }

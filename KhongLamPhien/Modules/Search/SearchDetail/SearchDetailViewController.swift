@@ -64,7 +64,6 @@ class SearchDetailViewController: BaseViewController {
         let blockedContacts = defaults?.value(forKey: "blockList") ?? []
         return blockedContacts as! [String]
     }
-
     
 }
 

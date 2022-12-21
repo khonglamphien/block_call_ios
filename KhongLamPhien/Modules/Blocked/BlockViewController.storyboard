@@ -57,7 +57,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="1i5-ga-fbA"/>
                                         </constraints>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                         <connections>
                                             <outlet property="delegate" destination="Y6W-OH-hqX" id="p2l-iL-n3n"/>
                                         </connections>
@@ -69,6 +69,36 @@
                                     <constraint firstItem="03P-6D-QXq" firstAttribute="leading" secondItem="6Kx-KC-gLd" secondAttribute="leading" id="9Vz-4F-htN"/>
                                     <constraint firstItem="03P-6D-QXq" firstAttribute="top" secondItem="6Kx-KC-gLd" secondAttribute="top" id="P8t-GJ-Qve"/>
                                     <constraint firstAttribute="trailing" secondItem="03P-6D-QXq" secondAttribute="trailing" id="Znp-Js-OA4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hW-WX-GSh">
+                                <rect key="frame" x="0.0" y="209.33333333333337" width="393" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCh-cj-B2U">
+                                        <rect key="frame" x="20" y="52.999999999999964" width="353" height="81.333333333333314"/>
+                                        <string key="text">You need to allow CallBlocker to block and identify phone numbers 
+Enable app in Settings -&gt; Phone -&gt; Call blocking &amp; Identification</string>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gm-tM-8gb">
+                                        <rect key="frame" x="134.33333333333334" y="154.33333333333334" width="124.33333333333334" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Open Setting"/>
+                                        <connections>
+                                            <action selector="onSelectOpenSettingButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9Rj-ox-WrE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="1gm-tM-8gb" firstAttribute="top" secondItem="pCh-cj-B2U" secondAttribute="bottom" constant="20" id="1Tt-iA-Ea7"/>
+                                    <constraint firstItem="pCh-cj-B2U" firstAttribute="centerX" secondItem="5hW-WX-GSh" secondAttribute="centerX" id="4o5-tz-WnH"/>
+                                    <constraint firstItem="pCh-cj-B2U" firstAttribute="leading" secondItem="5hW-WX-GSh" secondAttribute="leading" constant="20" id="5ES-qW-bZc"/>
+                                    <constraint firstAttribute="height" constant="200" id="Rlo-Nf-59d"/>
+                                    <constraint firstItem="1gm-tM-8gb" firstAttribute="centerX" secondItem="pCh-cj-B2U" secondAttribute="centerX" id="eHM-mU-SvD"/>
+                                    <constraint firstItem="pCh-cj-B2U" firstAttribute="top" secondItem="5hW-WX-GSh" secondAttribute="top" constant="53" id="vyw-6R-893"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1fg-aG-ogh">
@@ -84,10 +114,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6Kx-KC-gLd" secondAttribute="trailing" id="4FI-H0-zLA"/>
+                            <constraint firstItem="5hW-WX-GSh" firstAttribute="top" secondItem="6Kx-KC-gLd" secondAttribute="bottom" constant="50" id="CQU-kn-hkg"/>
                             <constraint firstItem="6Kx-KC-gLd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="FwP-MH-5Lp"/>
                             <constraint firstItem="1fg-aG-ogh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="J44-H5-clS"/>
+                            <constraint firstItem="5hW-WX-GSh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Kow-K6-eCp"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="1fg-aG-ogh" secondAttribute="bottom" id="Meb-53-RIf"/>
                             <constraint firstItem="ZbE-ca-am1" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="PYq-MT-sad"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5hW-WX-GSh" secondAttribute="trailing" id="UGd-51-rqo"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ews-tm-mlB" secondAttribute="trailing" id="bBy-Wa-CkQ"/>
                             <constraint firstItem="1fg-aG-ogh" firstAttribute="top" secondItem="6Kx-KC-gLd" secondAttribute="bottom" id="dPo-OG-oe9"/>
                             <constraint firstItem="6Kx-KC-gLd" firstAttribute="top" secondItem="Ews-tm-mlB" secondAttribute="bottom" id="hze-QB-9hj"/>
@@ -99,6 +132,7 @@
                     <connections>
                         <outlet property="searchBar" destination="03P-6D-QXq" id="FWW-qo-0ET"/>
                         <outlet property="tableView" destination="1fg-aG-ogh" id="KfE-gj-ERi"/>
+                        <outlet property="viewCheckPermision" destination="5hW-WX-GSh" id="IiM-E8-TPZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -13,7 +13,6 @@ class CallDirectoryHandler: CXCallDirectoryProvider {
     override func beginRequest(with context: CXCallDirectoryExtensionContext) {
         context.delegate = self
 
-        print("========abc123====", getBlockedContacts())
         do {
             try addBlockingPhoneNumbers(to: context)
         } catch {
@@ -39,7 +38,7 @@ class CallDirectoryHandler: CXCallDirectoryProvider {
         // consider only loading a subset of numbers at a given time and using autorelease pool(s) to release objects allocated during each batch of numbers which are loaded.
         // Numbers must be provided in numerically ascending order.
         
-        let phoneNumbers: [String] = []//self.sortArray(arrayToSort: self.getBlockedContacts())
+        let phoneNumbers = self.sortArray(arrayToSort: self.getBlockedContacts())
         for phoneNumber in phoneNumbers {
             let phInt = Int64(phoneNumber as String)
             context.addBlockingEntry(withNextSequentialPhoneNumber: phInt!)
@@ -52,7 +51,7 @@ class CallDirectoryHandler: CXCallDirectoryProvider {
         // consider only loading a subset of numbers at a given time and using autorelease pool(s) to release objects allocated during each batch of numbers which are loaded.
         // Numbers must be provided in numerically ascending order.
 
-        let phoneNumbers: [String] = []//self.sortArray(arrayToSort: self.getBlockedContacts()) //["84982160365"]//
+        let phoneNumbers = self.sortArray(arrayToSort: self.getBlockedContacts()) //["84982160365"]//
         for phoneNumber in phoneNumbers {
             let phInt = Int64(phoneNumber as String)
             context.addIdentificationEntry(withNextSequentialPhoneNumber: phInt!, label: "CALLBLOCK")

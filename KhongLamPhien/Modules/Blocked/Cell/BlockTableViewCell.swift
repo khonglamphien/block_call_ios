@@ -13,6 +13,8 @@ class BlockTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var leftView: UIView!
+    @IBOutlet weak var leftLabel: UILabel!
+    @IBOutlet weak var imageRight: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

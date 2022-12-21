@@ -9,21 +9,44 @@ import UIKit
 
 class ProtectionViewController: BaseViewController {
 
+    @IBOutlet weak var regionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let countryCode = Locale.current.regionCode
+        regionLabel.text = countryName(from: countryCode ?? "")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func countryName(from countryCode: String) -> String {
+        if let name = (Locale.current as NSLocale).displayName(forKey: .countryCode, value: countryCode) {
+            return name
+        } else {
+            return countryCode
+        }
     }
-    */
 
+    @IBAction func onSelectContactButton(_ sender: Any) {
+        let webviewVC = UIStoryboard.storyBoard("WebViewViewController").viewController(of: WebViewViewController.self)
+        webviewVC.typeScreen = .contact
+        navigationController?.pushViewController(webviewVC, animated: true)
+    }
+    
+    @IBAction func onSelectPrivacyButton(_ sender: Any) {
+        let webviewVC = UIStoryboard.storyBoard("WebViewViewController").viewController(of: WebViewViewController.self)
+        webviewVC.typeScreen = .privacy
+        navigationController?.pushViewController(webviewVC, animated: true)
+    }
+    
+    @IBAction func onSelectTermsButton(_ sender: Any) {
+        let webviewVC = UIStoryboard.storyBoard("WebViewViewController").viewController(of: WebViewViewController.self)
+        webviewVC.typeScreen = .terms
+        navigationController?.pushViewController(webviewVC, animated: true)
+    }
+    
+    @IBAction func shareFaceBook(_ sender: Any) {
+    }
+    
+    @IBAction func shareApp(_ sender: Any) {
+    }
+    
 }

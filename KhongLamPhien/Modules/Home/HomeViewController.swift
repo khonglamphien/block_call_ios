@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import CallKit
+import Contacts
 
 class HomeViewController: BaseViewController {
 
@@ -18,10 +20,6 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
         setupView()
         addObserver()
-        
-        let defaults = UserDefaults.standard
-        let myarray = defaults.stringArray(forKey: "blockList") ?? [String]()
-        print("=========ray====", myarray)
     }
     
     private func setupView() {
@@ -36,7 +34,6 @@ extension HomeViewController {
     func addObserver() {
         viewModel.searchAllApiResponse.subscribe(onNext: {[weak self] (response) in
             guard let self = self else { return }
-            print("========", response.data)
             self.dataSearch = response.data
             self.tableView.reloadData()
         }).disposed(by: disposeBag)
@@ -60,7 +57,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         let data = dataSearch[indexPath.row]
         cell.phoneNumberLabel.text = data.phoneNumber
         cell.nameLabel.text = ""
-        cell.nextButton.setImage(UIImage(named: "next_icon"), for: .normal)
+        cell.imageRight.image = UIImage(named: "next_icon")
         return cell
     }
     
