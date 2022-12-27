@@ -44,9 +44,14 @@ class ProtectionViewController: BaseViewController {
     }
     
     @IBAction func shareFaceBook(_ sender: Any) {
-    }
-    
-    @IBAction func shareApp(_ sender: Any) {
+        let URLstring =  String(format:"https://anhnhn.page.link/mVFa")
+        let urlToShare = URL(string:URLstring)
+        let title = "Block Broker"
+        let activityViewController = UIActivityViewController(
+            activityItems: [title,urlToShare!],
+            applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        present(activityViewController,animated: true,completion: nil)
     }
     
 }

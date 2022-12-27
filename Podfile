@@ -27,6 +27,8 @@ target 'KhongLamPhien' do
   pod 'KeychainAccess'
   pod 'PopupDialog', '~> 1.1'
   pod 'WHTabbar'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/DynamicLinks'
 
   target 'KhongLamPhienTests' do
     inherit! :search_paths

@@ -11,6 +11,7 @@ import CallKit
 class PopupConfirmBlockViewController: BaseViewController {
 
     @IBOutlet weak var phoneNumberTF: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
     
     var blockButton: () -> Void = {}
     var listBlock = [String]()
@@ -29,7 +30,11 @@ class PopupConfirmBlockViewController: BaseViewController {
         guard let number = phoneNumberTF.text, !number.isEmpty else {
             return
         }
-//        let number = "0969794720"
+        if !number.hasPrefix("+") {
+            errorLabel.isHidden = false
+            return
+        }
+        errorLabel.isHidden = true
         var phoneNumber = number
         phoneNumber = phoneNumber.removeFormat()
         if self.listBlock.contains(phoneNumber) {

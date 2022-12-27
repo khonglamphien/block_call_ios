@@ -38,7 +38,10 @@ class CallDirectoryHandler: CXCallDirectoryProvider {
         // consider only loading a subset of numbers at a given time and using autorelease pool(s) to release objects allocated during each batch of numbers which are loaded.
         // Numbers must be provided in numerically ascending order.
         
-        let phoneNumbers = self.sortArray(arrayToSort: self.getBlockedContacts())
+        var phoneNumbers = self.sortArray(arrayToSort: self.getBlockedContacts())
+        if phoneNumbers.isEmpty {
+            phoneNumbers = ["0111111111"]
+        }
         for phoneNumber in phoneNumbers {
             let phInt = Int64(phoneNumber as String)
             context.addBlockingEntry(withNextSequentialPhoneNumber: phInt!)
@@ -51,7 +54,10 @@ class CallDirectoryHandler: CXCallDirectoryProvider {
         // consider only loading a subset of numbers at a given time and using autorelease pool(s) to release objects allocated during each batch of numbers which are loaded.
         // Numbers must be provided in numerically ascending order.
 
-        let phoneNumbers = self.sortArray(arrayToSort: self.getBlockedContacts()) //["84982160365"]//
+        var phoneNumbers = self.sortArray(arrayToSort: self.getBlockedContacts()) //["84982160365"]//
+        if phoneNumbers.isEmpty {
+            phoneNumbers = ["0111111111"]
+        }
         for phoneNumber in phoneNumbers {
             let phInt = Int64(phoneNumber as String)
             context.addIdentificationEntry(withNextSequentialPhoneNumber: phInt!, label: "CALLBLOCK")

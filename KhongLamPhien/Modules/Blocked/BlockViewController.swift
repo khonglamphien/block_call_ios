@@ -35,8 +35,6 @@ class BlockViewController: BaseViewController {
             }
             
             if let error = error {
-                print( "======", error, "==", error.localizedDescription)
-                
                 if error.localizedDescription == "The operation couldn’t be completed. (com.apple.CallKit.error.calldirectorymanager error 6.)" {
                     DispatchQueue.main.async {
                         self.tableView.isHidden = true
