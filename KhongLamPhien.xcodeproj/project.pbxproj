@@ -12,7 +12,7 @@
 		6BB75030DF3CBB6FC023F8D4 /* Pods_KhongLamPhien.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860FE59B3B1ECE4D947F9A54 /* Pods_KhongLamPhien.framework */; };
 		A4B41E9529523D0800E02260 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B41E9429523D0800E02260 /* WebViewViewController.swift */; };
 		A4B41E9729523D1900E02260 /* WebViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B41E9629523D1900E02260 /* WebViewViewController.storyboard */; };
-		A4B5EC38295AE3990047C420 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4B5EC37295AE3990047C420 /* GoogleService-Info.plist */; };
+		A4B5EC3A295BF2110047C420 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4B5EC39295BF2110047C420 /* GoogleService-Info.plist */; };
 		A4CEA13C2952F19500B33192 /* terms.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A4CEA13B2952F19500B33192 /* terms.rtf */; };
 		A4E997A92948789A00A2A367 /* BlockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E997A72948789A00A2A367 /* BlockTableViewCell.swift */; };
 		A4E997AA2948789A00A2A367 /* BlockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4E997A82948789A00A2A367 /* BlockTableViewCell.xib */; };
@@ -117,7 +117,7 @@
 		A20ABEED594AA7D3419989E7 /* Pods-KhongLamPhien-KhongLamPhienUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhongLamPhien-KhongLamPhienUITests.debug.xcconfig"; path = "Target Support Files/Pods-KhongLamPhien-KhongLamPhienUITests/Pods-KhongLamPhien-KhongLamPhienUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A4B41E9429523D0800E02260 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		A4B41E9629523D1900E02260 /* WebViewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewViewController.storyboard; sourceTree = "<group>"; };
-		A4B5EC37295AE3990047C420 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A4B5EC39295BF2110047C420 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A4CEA13B2952F19500B33192 /* terms.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = terms.rtf; sourceTree = "<group>"; };
 		A4E997A72948789A00A2A367 /* BlockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockTableViewCell.swift; sourceTree = "<group>"; };
 		A4E997A82948789A00A2A367 /* BlockTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlockTableViewCell.xib; sourceTree = "<group>"; };
@@ -397,7 +397,7 @@
 				A4FE53D329419696003FC150 /* LaunchScreen.storyboard */,
 				A4FE53D629419696003FC150 /* Info.plist */,
 				A4FE54112941F441003FC150 /* CallBlock-Bridging-Header.h */,
-				A4B5EC37295AE3990047C420 /* GoogleService-Info.plist */,
+				A4B5EC39295BF2110047C420 /* GoogleService-Info.plist */,
 				A4CEA13B2952F19500B33192 /* terms.rtf */,
 			);
 			path = App;
@@ -694,10 +694,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4B5EC38295AE3990047C420 /* GoogleService-Info.plist in Resources */,
 				A4FE54152942E36F003FC150 /* HomeViewController.storyboard in Resources */,
 				A4E998AF2950516300A2A367 /* ContactDetailViewController.storyboard in Resources */,
 				A4E997AA2948789A00A2A367 /* BlockTableViewCell.xib in Resources */,
+				A4B5EC3A295BF2110047C420 /* GoogleService-Info.plist in Resources */,
 				A4E99876294B0B8B00A2A367 /* SearchDetailTableViewCell.xib in Resources */,
 				A4FE53D529419696003FC150 /* LaunchScreen.storyboard in Resources */,
 				A4E998AA294D88F000A2A367 /* ProtectionViewController.storyboard in Resources */,

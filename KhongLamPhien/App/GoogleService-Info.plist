@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>151560862286-nl5eqqm3l0bl8a01ka56dnc8vl5g4mm6.apps.googleusercontent.com</string>
+	<string>438403226764-gn1j8cmkvbf1qqjn5ut7eltpfs6c2ku8.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.151560862286-nl5eqqm3l0bl8a01ka56dnc8vl5g4mm6</string>
+	<string>com.googleusercontent.apps.438403226764-gn1j8cmkvbf1qqjn5ut7eltpfs6c2ku8</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAkcq8W1aMOa1yVP2XpClGP5UgD-XsYrBg</string>
+	<string>AIzaSyB5VbK54sJh47L0RN-2TUe85QePTDPoGQQ</string>
 	<key>GCM_SENDER_ID</key>
-	<string>151560862286</string>
+	<string>438403226764</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>anhnhn.KhongLamPhiens</string>
+	<string>com.callblock.healerpro</string>
 	<key>PROJECT_ID</key>
-	<string>callblock-9bd7b</string>
+	<string>iblock-call-pro</string>
 	<key>STORAGE_BUCKET</key>
-	<string>callblock-9bd7b.appspot.com</string>
+	<string>iblock-call-pro.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:151560862286:ios:10550512a211b950f3611f</string>
+	<string>1:438403226764:ios:e14f3b3fa2d7043e466fa9</string>
 </dict>
 </plist>

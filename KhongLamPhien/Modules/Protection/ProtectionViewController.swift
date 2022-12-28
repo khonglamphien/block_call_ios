@@ -44,7 +44,7 @@ class ProtectionViewController: BaseViewController {
     }
     
     @IBAction func shareFaceBook(_ sender: Any) {
-        let URLstring =  String(format:"https://anhnhn.page.link/mVFa")
+        let URLstring =  String(format:"https://callblockpro.page.link/app")
         let urlToShare = URL(string:URLstring)
         let title = "Block Broker"
         let activityViewController = UIActivityViewController(
