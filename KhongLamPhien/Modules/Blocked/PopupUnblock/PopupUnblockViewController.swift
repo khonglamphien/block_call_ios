@@ -74,7 +74,7 @@ class PopupUnblockViewController: BaseViewController {
     
     func syncUD() {
         updateBlockedContactsList(contacts: listBlock)
-        CXCallDirectoryManager.sharedInstance.reloadExtension(withIdentifier: "anhnhn.KhongLamPhiens.CallBlock", completionHandler: { (error) -> Void in
+        CXCallDirectoryManager.sharedInstance.reloadExtension(withIdentifier: "com.callblock.healerpro.blockcall", completionHandler: { (error) -> Void in
             DispatchQueue.main.async {
                 self.unblockButton()
                 self.dismiss(animated: true)
@@ -86,7 +86,7 @@ class PopupUnblockViewController: BaseViewController {
     }
     
     func updateBlockedContactsList(contacts: [String]) {
-        let defaults = UserDefaults(suiteName: "group.bcs.kuhb")
+        let defaults = UserDefaults(suiteName: "group.com.callblock.pro")
         defaults?.removeObject(forKey: "blockList")
         defaults?.set(contacts, forKey: "blockList")
         defaults?.synchronize()
