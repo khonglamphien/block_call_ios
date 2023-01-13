@@ -11,22 +11,37 @@ class Session: NSObject {
     
     static let shared = Session()
     
-    static func showHomeView() {
-        let tabbarViewController = getHomeTabbar()
+    var laguage: String {
+        get {
+            return UserDefaults.standard.string(forKey: "language") ?? "en"
+        }
+        set {
+            return UserDefaults.standard.set(newValue, forKey: "language")
+        }
+    }
+    
+    static func showHomeView(_ indexTab: Int = 0) {
+        let tabbarViewController = getHomeTabbar(indexTab)
         if let window = UIApplication.shared.keyWindow {
             DispatchQueue.main.async {
-                UIView.transition(with: window, duration: 0.5, options: .transitionFlipFromLeft, animations: {
+                if indexTab == 0 {
+                    UIView.transition(with: window, duration: 0.5, options: .transitionFlipFromLeft, animations: {
+                        let controller = UINavigationController(rootViewController: tabbarViewController)
+                        controller.isNavigationBarHidden = true
+                        window.rootViewController = controller
+                    }, completion: { _ in
+                        
+                    })
+                } else {
                     let controller = UINavigationController(rootViewController: tabbarViewController)
                     controller.isNavigationBarHidden = true
                     window.rootViewController = controller
-                }, completion: { _ in
-                    
-                })
+                }
             }
         }
     }
     
-    static func getHomeTabbar() -> ESTabBarController {
+    static func getHomeTabbar(_ indexSelect: Int = 0) -> ESTabBarController {
        
         let tabbarViewController = ESTabBarController()
         
@@ -62,22 +77,23 @@ class Session: NSObject {
         esTabbarProtection.highlightIconColor = .white
         esTabbarProtection.highlightTextColor = .white
         
-        homeViewController.tabBarItem = ESTabBarItem.init(esTabbarHome, title: "Home",
+        homeViewController.tabBarItem = ESTabBarItem.init(esTabbarHome, title: "home".localized,
                                                 image: UIImage(named: "home_icon"),
                                                 selectedImage: UIImage(named: "home_icon"))
-        searchViewController.tabBarItem = ESTabBarItem.init(esTabbarSearch, title: "Search",
+        searchViewController.tabBarItem = ESTabBarItem.init(esTabbarSearch, title: "search".localized,
                                                 image: UIImage(named: "search_icon"),
                                                 selectedImage: UIImage(named: "search_icon"))
-        blockedViewController.tabBarItem = ESTabBarItem.init(esTabbarBlocked, title: "Blocked",
+        blockedViewController.tabBarItem = ESTabBarItem.init(esTabbarBlocked, title: "blocked".localized,
                                                       image: UIImage(named: "block_icon"),
                                                       selectedImage: UIImage(named: "block_icon"))
-        contactViewController.tabBarItem = ESTabBarItem.init(esTabbarContact, title: "Contact",
+        contactViewController.tabBarItem = ESTabBarItem.init(esTabbarContact, title: "contact".localized,
                                                         image: UIImage(named: "contact_icon"),
                                                         selectedImage: UIImage(named: "contact_icon"))
-        protectionViewController.tabBarItem = ESTabBarItem.init(esTabbarProtection, title: "Account",
+        protectionViewController.tabBarItem = ESTabBarItem.init(esTabbarProtection, title: "account".localized,
                                                         image: UIImage(named: "shield_icon"),
                                                         selectedImage: UIImage(named: "shield_icon"))
         tabbarViewController.viewControllers = [homeViewController, searchViewController, blockedViewController, contactViewController, protectionViewController]
+        tabbarViewController.selectedIndex = indexSelect
         return tabbarViewController
     }
 

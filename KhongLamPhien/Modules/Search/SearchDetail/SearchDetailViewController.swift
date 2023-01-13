@@ -21,6 +21,9 @@ class SearchDetailViewController: BaseViewController {
     }
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var reportButton: UIButton!
+    @IBOutlet weak var blockButton: UIButton!
     
     var dataSearchDetail: SearchModel?
     var dataShowDetail = [[DataShowDetail]]()
@@ -32,10 +35,13 @@ class SearchDetailViewController: BaseViewController {
 
     private func setupView() {
         tableView.registerCell(SearchDetailTableViewCell.self)
+        titleLabel.text = "search_detail".localized
+        reportButton.setTitle("report".localized, for: .normal)
+        blockButton.setTitle("block".localized, for: .normal)
         guard let data = dataSearchDetail else {
             return
         }
-        dataShowDetail = [[DataShowDetail("Số thuê bao", data.phoneNumber), DataShowDetail("Tìm kiếm", data.countSearch), DataShowDetail("Hậu thuẫn", data.backerBy), DataShowDetail("Mô tả", data.phoneDesription)], [DataShowDetail("Nhà cung cấp", data.supplier), DataShowDetail("Tên doanh nghiệp", data.nameBusiness), DataShowDetail("Ngành công nghiệp", data.industry), DataShowDetail("Địa chỉ", data.address)], [DataShowDetail("", "")]]
+        dataShowDetail = [[DataShowDetail("phone_number".localized, data.phoneNumber), DataShowDetail("count_search".localized, data.countSearch), DataShowDetail("back_by".localized, data.backerBy), DataShowDetail("description".localized, data.phoneDesription)], [DataShowDetail("supplier".localized, data.supplier), DataShowDetail("name_business".localized, data.nameBusiness), DataShowDetail("industry".localized, data.industry), DataShowDetail("address".localized, data.address)], [DataShowDetail("", "")]]
     }
     
     @IBAction func onSelectBackButton(_ sender: Any) {
@@ -87,18 +93,18 @@ extension SearchDetailViewController: UITableViewDataSource, UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(cellType: SearchDetailTableViewCell.self, forIndexPath: indexPath)
         cell.titleLabel.text = dataShowDetail[indexPath.section][indexPath.row].title
-        cell.contentLabel.text = dataShowDetail[indexPath.section][indexPath.row].content.isEmpty ? "Đang cập nhật" : dataShowDetail[indexPath.section][indexPath.row].content
+        cell.contentLabel.text = dataShowDetail[indexPath.section][indexPath.row].content.isEmpty ? "updating".localized : dataShowDetail[indexPath.section][indexPath.row].content
         return cell
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
             case 0:
-                return "Thông tin cơ bản"
+                return "basic_infomation".localized
             case 1:
-                return "Thông tin chi tiết"
+                return "details".localized
             default:
-                return "Mô tả chi tiết"
+                return "description_detail".localized
         }
     }
     

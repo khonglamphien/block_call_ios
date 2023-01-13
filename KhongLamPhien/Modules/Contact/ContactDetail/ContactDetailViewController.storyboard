@@ -211,9 +211,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blockButton" destination="HHt-pG-v94" id="TgZ-ye-5Ad"/>
                         <outlet property="nameLabel" destination="fV6-P6-bUE" id="qo6-JP-9NK"/>
                         <outlet property="nickNameLabel" destination="Zeh-So-Avq" id="XdJ-Hu-jYl"/>
                         <outlet property="phoneNumber" destination="wfV-A9-S7x" id="Eac-nE-RBH"/>
+                        <outlet property="reportButton" destination="Yt9-Cz-SS9" id="cvP-1r-yjF"/>
+                        <outlet property="shareButton" destination="Db4-zL-7OZ" id="rtL-MY-trT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

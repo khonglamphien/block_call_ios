@@ -1,0 +1,56 @@
+/* 
+  Localizable.strings
+  KhongLamPhien
+
+  Created by Nguyen Anh on 09/01/2023.
+  
+*/
+
+// Tabbar
+"home" = "Trang chủ";
+"search" = "Tìm kiếm";
+"blocked" = "Chặn";
+"contact" = "Danh bạ";
+"account" = "Tài khoản";
+
+// Search
+"search_number" = "Tìm kiếm số điện thoại";
+"enter_phone_number" = "Nhập số điện thoại";
+"search_detail" = "Chi tiết tìm kiếm";
+"data_empty" = "Dữ liệu tìm kiếm trống";
+"basic_infomation" = "Thông tin cơ bản";
+"details" = "Thông tin chi tiết";
+"description_detail" = "Mô tả chi tiết";
+"updating" = "Đang cập nhật";
+"phone_number" = "Số thuê bao";
+"count_search" = "Tìm kiếm";
+"back_by" = "Hậu thuẫn";
+"description" = "Mô tả";
+"supplier" = "Nhà cung cấp";
+"name_business" = "Tên doanh nghiệp";
+"industry" = "Ngành công nghiệp";
+"address" = "Địa chỉ";
+"block" = "Chặn";
+"report" = "Báo cáo";
+"report_number" = "Báo cáo số điện thoại";
+"share_contact" = "Chia sẻ danh bạ";
+
+// Account
+"language" = "Ngôn ngữ";
+"contact_setting" = "Liên hệ";
+"privacy_policy" = "Chính sách bảo mật";
+"terms_of_user" = "Điều khoản người dùng";
+"share" = "Chia sẻ";
+"region" = "Khu vực";
+
+// Block
+"block_phone_number" = "Chặn số điện thoại";
+"enter_the_phone_number" = "Nhập số điện thoại bạn muốn chặn";
+"error_enter_number" = "Bạn cần nhập mã quốc gia trước số điện thoại";
+"close" = "Đóng";
+"enter" = "Nhập số điện thoại";
+"are_you_sure_you_want_to_block" = "Bạn muốn chặn số điện thoại này?";
+"are_you_sure_you_want_to_report" = "Bạn muốn báo cáo số điện thoại này?";
+"not_now" = "Để sau";
+"cancle" = "Đóng";
+"are_you_sure_you_want_to_unblock" = "Bạn muốn bỏ chặn số điện thoại này?";

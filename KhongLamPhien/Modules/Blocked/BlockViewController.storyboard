@@ -132,6 +132,7 @@ Enable app in Settings -&gt; Phone -&gt; Call blocking &amp; Identification</str
                     <connections>
                         <outlet property="searchBar" destination="03P-6D-QXq" id="FWW-qo-0ET"/>
                         <outlet property="tableView" destination="1fg-aG-ogh" id="KfE-gj-ERi"/>
+                        <outlet property="titleLabel" destination="ZbE-ca-am1" id="CXp-R7-8pT"/>
                         <outlet property="viewCheckPermision" destination="5hW-WX-GSh" id="IiM-E8-TPZ"/>
                     </connections>
                 </viewController>

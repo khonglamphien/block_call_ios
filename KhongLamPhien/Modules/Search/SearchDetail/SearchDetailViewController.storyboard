@@ -125,7 +125,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blockButton" destination="VwS-uz-XHU" id="efo-Dj-jLU"/>
+                        <outlet property="reportButton" destination="fX0-0S-Z6m" id="JsZ-a9-Y46"/>
                         <outlet property="tableView" destination="3LW-vc-6Dl" id="caL-Tx-CNF"/>
+                        <outlet property="titleLabel" destination="REd-Gl-yGN" id="ikT-Jj-LPs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

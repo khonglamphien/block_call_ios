@@ -21,22 +21,21 @@ class WebViewViewController: BaseViewController {
     
     var typeScreen: TypeWeb = .contact
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         switch typeScreen {
             case .contact:
-                titleLabel.text = "Contact"
+                titleLabel.text = "contact_setting".localized
                 let myURL = URL(string:"https://khonglamphien.com/")
                 let myRequest = URLRequest(url: myURL!)
                 myWebView.load(myRequest)
             case .terms:
-                titleLabel.text = "Terms of use"
+                titleLabel.text = "terms_of_user".localized
                 let myURL = URL(string:"https://khonglamphien.com/")
                 let myRequest = URLRequest(url: myURL!)
                 myWebView.load(myRequest)
             case .privacy:
-                titleLabel.text = "Privacy Policy"
+                titleLabel.text = "privacy_policy".localized
                 let localfilePath = Bundle.main.url(forResource: "terms", withExtension: "rtf")
                 let myRequest = URLRequest(url: localfilePath!)
                 myWebView.load(myRequest)
@@ -45,7 +44,6 @@ class WebViewViewController: BaseViewController {
         
     }
     
-
     @IBAction func onSelectBackButton(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }

@@ -14,13 +14,14 @@ class BlockViewController: BaseViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var viewCheckPermision: UIView!
+    @IBOutlet weak var titleLabel: UILabel!
     
     var listBlock = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        //syncUD()
+        titleLabel.text = "block_phone_number".localized
     }
     
     override func viewWillAppear(_ animated: Bool) {

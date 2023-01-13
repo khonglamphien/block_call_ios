@@ -15,7 +15,7 @@ extension WHTabbarController {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = createPath()
         shapeLayer.strokeColor = UIColor.lightGray.cgColor
-        shapeLayer.fillColor = UIColor.white.cgColor
+        shapeLayer.fillColor = backgroundViewParentColor.cgColor
         shapeLayer.lineWidth = 1.0
         
         //The below 4 lines are for shadow above the bar. you can skip them if you do not want a shadow

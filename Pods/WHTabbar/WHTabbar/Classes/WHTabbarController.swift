@@ -22,6 +22,7 @@ open class WHTabbarController: UITabBarController {
     public var centerButtonBorderWidth : CGFloat = 3
     public var centerButtonImage : UIImage?
     public var centerButtonImageSize :  CGFloat = 25.0
+    public var backgroundViewParentColor : UIColor =   #colorLiteral(red: 0.8509803922, green: 0.1254901961, blue: 0.1529411765, alpha: 1)
     
     var blockView : UIView?
     var centreButtonContainer : UIView?

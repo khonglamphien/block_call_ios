@@ -9,16 +9,16 @@ import UIKit
 import IQKeyboardManagerSwift
 import Firebase
 import FirebaseDynamicLinks
+import GoogleMobileAds
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         setupIQKeyboardManager()
         FirebaseApp.configure()
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         return true
     }
 
@@ -40,8 +40,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let dynamicLink = DynamicLinks.dynamicLinks().dynamicLink(fromCustomSchemeURL: url) {
             
         }
-
-        
         return true
     }
     
@@ -56,8 +54,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        print("=====applicationDidBecomeActive")
+    }
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        print("=====applicationWillEnterForeground")
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        print("=====applicationDidEnterBackground")
+    }
 
 }
+
 extension AppDelegate {
     
     func setupIQKeyboardManager() {
