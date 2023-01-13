@@ -10,6 +10,10 @@
 		443D37F588FD9FFC3EC5E997 /* Pods_KhongLamPhienTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E87B916BDEEFD4619FE1890 /* Pods_KhongLamPhienTests.framework */; };
 		4B9AB7872AA75ADD2A410704 /* Pods_KhongLamPhien_KhongLamPhienUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0A133A069C5F3BEFFF2D39 /* Pods_KhongLamPhien_KhongLamPhienUITests.framework */; };
 		6BB75030DF3CBB6FC023F8D4 /* Pods_KhongLamPhien.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860FE59B3B1ECE4D947F9A54 /* Pods_KhongLamPhien.framework */; };
+		A44EFD15296C19B800A99D41 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A44EFD17296C19B800A99D41 /* Localizable.strings */; };
+		A4A5D4CA296E5C0100C1AFC9 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A5D4C9296E5C0100C1AFC9 /* String+Ext.swift */; };
+		A4A5D4CD29708B2800C1AFC9 /* PopupLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A5D4CC29708B2800C1AFC9 /* PopupLanguageViewController.swift */; };
+		A4A5D4CF29708B3500C1AFC9 /* PopupLanguageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A5D4CE29708B3500C1AFC9 /* PopupLanguageViewController.storyboard */; };
 		A4B41E9529523D0800E02260 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B41E9429523D0800E02260 /* WebViewViewController.swift */; };
 		A4B41E9729523D1900E02260 /* WebViewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B41E9629523D1900E02260 /* WebViewViewController.storyboard */; };
 		A4B5EC3A295BF2110047C420 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4B5EC39295BF2110047C420 /* GoogleService-Info.plist */; };
@@ -115,6 +119,11 @@
 		6FDC88398334D73E9967C28D /* Pods-KhongLamPhienTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhongLamPhienTests.release.xcconfig"; path = "Target Support Files/Pods-KhongLamPhienTests/Pods-KhongLamPhienTests.release.xcconfig"; sourceTree = "<group>"; };
 		860FE59B3B1ECE4D947F9A54 /* Pods_KhongLamPhien.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KhongLamPhien.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20ABEED594AA7D3419989E7 /* Pods-KhongLamPhien-KhongLamPhienUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhongLamPhien-KhongLamPhienUITests.debug.xcconfig"; path = "Target Support Files/Pods-KhongLamPhien-KhongLamPhienUITests/Pods-KhongLamPhien-KhongLamPhienUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A44EFD16296C19B800A99D41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A44EFD1D296C1AA000A99D41 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A4A5D4C9296E5C0100C1AFC9 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		A4A5D4CC29708B2800C1AFC9 /* PopupLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupLanguageViewController.swift; sourceTree = "<group>"; };
+		A4A5D4CE29708B3500C1AFC9 /* PopupLanguageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopupLanguageViewController.storyboard; sourceTree = "<group>"; };
 		A4B41E9429523D0800E02260 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		A4B41E9629523D1900E02260 /* WebViewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewViewController.storyboard; sourceTree = "<group>"; };
 		A4B5EC39295BF2110047C420 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -240,6 +249,15 @@
 				6FDC88398334D73E9967C28D /* Pods-KhongLamPhienTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4A5D4CB29708AE500C1AFC9 /* PopupLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				A4A5D4CC29708B2800C1AFC9 /* PopupLanguageViewController.swift */,
+				A4A5D4CE29708B3500C1AFC9 /* PopupLanguageViewController.storyboard */,
+			);
+			path = PopupLanguage;
 			sourceTree = "<group>";
 		};
 		A4E997A6294877E800A2A367 /* Cell */ = {
@@ -399,6 +417,7 @@
 				A4FE54112941F441003FC150 /* CallBlock-Bridging-Header.h */,
 				A4B5EC39295BF2110047C420 /* GoogleService-Info.plist */,
 				A4CEA13B2952F19500B33192 /* terms.rtf */,
+				A44EFD17296C19B800A99D41 /* Localizable.strings */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -507,6 +526,7 @@
 		A4FE54052941F226003FC150 /* Protection */ = {
 			isa = PBXGroup;
 			children = (
+				A4A5D4CB29708AE500C1AFC9 /* PopupLanguage */,
 				A4E998A7294D88E300A2A367 /* ProtectionViewController.swift */,
 				A4E998A9294D88F000A2A367 /* ProtectionViewController.storyboard */,
 				A4B41E9429523D0800E02260 /* WebViewViewController.swift */,
@@ -533,6 +553,7 @@
 				A4FE541A2942EAD8003FC150 /* SKUICollectionView+Ext.swift */,
 				A4FE541C2942EADE003FC150 /* SKUITableView+Extensions.swift */,
 				A4FE541E2942EB11003FC150 /* SKUIView+Extension.swift */,
+				A4A5D4C9296E5C0100C1AFC9 /* String+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -668,6 +689,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = A4FE53BC29419694003FC150;
 			productRefGroup = A4FE53C629419694003FC150 /* Products */;
@@ -702,6 +724,7 @@
 				A4FE53D529419696003FC150 /* LaunchScreen.storyboard in Resources */,
 				A4E998AA294D88F000A2A367 /* ProtectionViewController.storyboard in Resources */,
 				A4E99871294B048800A2A367 /* SearchDetailViewController.storyboard in Resources */,
+				A4A5D4CF29708B3500C1AFC9 /* PopupLanguageViewController.storyboard in Resources */,
 				A4CEA13C2952F19500B33192 /* terms.rtf in Resources */,
 				A4E997AE2949AA6000A2A367 /* SearchViewController.storyboard in Resources */,
 				A4FE542829432B67003FC150 /* LaunchViewController.storyboard in Resources */,
@@ -710,6 +733,7 @@
 				A4E998A1294D7B8800A2A367 /* PopupConfirmBlockViewController.storyboard in Resources */,
 				A4FE5423294327AA003FC150 /* BlockViewController.storyboard in Resources */,
 				A4FE53D029419694003FC150 /* Main.storyboard in Resources */,
+				A44EFD15296C19B800A99D41 /* Localizable.strings in Resources */,
 				A4B41E9729523D1900E02260 /* WebViewViewController.storyboard in Resources */,
 				A4E998A6294D88C400A2A367 /* PopupUnblockViewController.storyboard in Resources */,
 			);
@@ -855,6 +879,7 @@
 				A4FE54212943279B003FC150 /* BlockViewController.swift in Sources */,
 				A4FE540A2941F351003FC150 /* Button.swift in Sources */,
 				A4FE54002941F166003FC150 /* Session.swift in Sources */,
+				A4A5D4CA296E5C0100C1AFC9 /* String+Ext.swift in Sources */,
 				A4FE540C2941F371003FC150 /* Label.swift in Sources */,
 				A4E998672949D04200A2A367 /* SearchResponse.swift in Sources */,
 				A4FE54192942E490003FC150 /* SKUIViewController+Extension.swift in Sources */,
@@ -867,6 +892,7 @@
 				A4E9986C294AFC9E00A2A367 /* SearchModel.swift in Sources */,
 				A4E99875294B0B8B00A2A367 /* SearchDetailTableViewCell.swift in Sources */,
 				A4FE54172942E44A003FC150 /* SKUIStoryboard+Ext.swift in Sources */,
+				A4A5D4CD29708B2800C1AFC9 /* PopupLanguageViewController.swift in Sources */,
 				A4E998AD2950515500A2A367 /* ContactDetailViewController.swift in Sources */,
 				A4E998652949CEB400A2A367 /* SearchApi.swift in Sources */,
 				A4FE53C929419694003FC150 /* AppDelegate.swift in Sources */,
@@ -922,6 +948,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A44EFD17296C19B800A99D41 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A44EFD16296C19B800A99D41 /* en */,
+				A44EFD1D296C1AA000A99D41 /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		A4FE53CE29419694003FC150 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1001,6 +1036,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -1061,6 +1097,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -1125,7 +1162,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KhongLamPhien/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Block Broker";
-				INFOPLIST_KEY_NSContactsUsageDescription = "You have to describe the real usage for a human.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "The app needs contacts to get the phone number to block.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1160,7 +1197,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KhongLamPhien/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Block Broker";
-				INFOPLIST_KEY_NSContactsUsageDescription = "You have to describe the real usage for a human.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "The app needs contacts to get the phone number to block.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

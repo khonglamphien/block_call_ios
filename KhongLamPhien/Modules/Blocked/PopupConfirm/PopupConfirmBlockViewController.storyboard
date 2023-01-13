@@ -142,7 +142,11 @@
                     </view>
                     <size key="freeformSize" width="393" height="400"/>
                     <connections>
-                        <outlet property="errorLabel" destination="aD9-pH-9qL" id="p6V-Ck-Yex"/>
+                        <outlet property="blockTitleButton" destination="aNO-wc-jGj" id="YE2-UW-WXG"/>
+                        <outlet property="blockTitleLabel" destination="Tg6-u5-slO" id="R4f-Vm-3Ql"/>
+                        <outlet property="closeButton" destination="XXc-ho-YqJ" id="ACY-2K-r1O"/>
+                        <outlet property="descriptionLabel" destination="pbM-Jd-NR3" id="ZVF-KZ-Vxa"/>
+                        <outlet property="errorLabel" destination="aD9-pH-9qL" id="62D-zU-eHY"/>
                         <outlet property="phoneNumberTF" destination="ZYm-Eb-Vle" id="87V-Mc-YI4"/>
                     </connections>
                 </viewController>

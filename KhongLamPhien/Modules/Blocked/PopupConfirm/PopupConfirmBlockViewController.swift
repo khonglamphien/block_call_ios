@@ -12,6 +12,10 @@ class PopupConfirmBlockViewController: BaseViewController {
 
     @IBOutlet weak var phoneNumberTF: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var blockTitleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var closeButton: UIButton!
+    @IBOutlet weak var blockTitleButton: UIButton!
     
     var blockButton: () -> Void = {}
     var listBlock = [String]()
@@ -19,7 +23,11 @@ class PopupConfirmBlockViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        blockTitleLabel.text = "block_phone_number".localized
+        descriptionLabel.text = "enter_the_phone_number".localized
+        errorLabel.text = "error_enter_number".localized
+        closeButton.setTitle("close".localized, for: .normal)
+        blockTitleButton.setTitle("block".localized, for: .normal)
     }
 
     @IBAction func onSelectCloseButton(_ sender: Any) {

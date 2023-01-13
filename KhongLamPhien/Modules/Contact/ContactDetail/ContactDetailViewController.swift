@@ -15,13 +15,15 @@ class ContactDetailViewController: BaseViewController {
     @IBOutlet weak var nickNameLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var phoneNumber: UILabel!
+    @IBOutlet weak var reportButton: UIButton!
+    @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var blockButton: UIButton!
     
     var contact: CNContact?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
-        print("========", contact?.phoneNumbers.first?.value.stringValue)
     }
 
     @IBAction func onSelectBackButton(_ sender: Any) {
@@ -29,6 +31,9 @@ class ContactDetailViewController: BaseViewController {
     }
     
     func loadData() {
+        reportButton.setTitle("report_number".localized, for: .normal)
+        shareButton.setTitle("share_contact".localized, for: .normal)
+        blockButton.setTitle("block".localized, for: .normal)
         guard let data = contact else {
             return
         }

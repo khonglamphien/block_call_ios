@@ -113,8 +113,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emptyLabel" destination="JdX-bV-PmB" id="3jx-Sb-Nhe"/>
                         <outlet property="numberPhoneTF" destination="Wnp-Yd-JBj" id="GTw-P0-r32"/>
                         <outlet property="tableView" destination="2OT-Tu-1cd" id="Cq6-G1-ke5"/>
+                        <outlet property="titleLabel" destination="Lxr-Vj-dXV" id="cUp-um-lUt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -11,6 +11,8 @@ class SearchViewController: BaseViewController {
     
     @IBOutlet weak var numberPhoneTF: UITextField!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var emptyLabel: UILabel!
     
     let viewModel = SearchViewModel()
     var dataSearch = [SearchModel]()
@@ -23,6 +25,9 @@ class SearchViewController: BaseViewController {
     
     private func setupView() {
         tableView.registerCell(BlockTableViewCell.self)
+        titleLabel.text = "search_number".localized
+        emptyLabel.text = "data_empty".localized
+        numberPhoneTF.placeholder = "enter_phone_number".localized
     }
     
     @IBAction func onSelectSearchButton(_ sender: Any) {

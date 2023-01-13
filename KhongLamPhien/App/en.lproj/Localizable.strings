@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+  KhongLamPhien
+
+  Created by Nguyen Anh on 09/01/2023.
+  
+*/
+
+
+// Tabbar
+"home" = "Home";
+"search" = "Search";
+"blocked" = "Blocked";
+"contact" = "Contact";
+"account" = "Account";
+
+// Search
+"search_number" = "Search number";
+"enter_phone_number" = "Enter phone number";
+"search_detail" = "Search detail";
+"data_empty" = "Data empty";
+"basic_infomation" = "Basic infomation";
+"details" = "Details";
+"description_detail" = "Description detail";
+"updating" = "Updating";
+"phone_number" = "Phone number";
+"count_search" = "Count search";
+"back_by" = "Back by";
+"description" = "Description";
+"supplier" = "Supplier";
+"name_business" = "Business name";
+"industry" = "Industry";
+"address" = "Address";
+"block" = "Block";
+"report" = "Report";
+"report_number" = "Report phone number";
+"share_contact" = "Share contact";
+
+// Account
+"language" = "Language";
+"contact_setting" = "Contact";
+"privacy_policy" = "Privacy policy";
+"terms_of_user" = "Terms of user";
+"share" = "Share";
+"region" = "Region";
+
+// Block
+"block_phone_number" = "Block phone number";
+"enter_the_phone_number" = "Enter the phone number you want to block";
+"error_enter_number" = "Enter country dial code followed by phone number";
+"close" = "Close";
+"enter" = "Enter phone number";
+"are_you_sure_you_want_to_block" = "Are you sure you want to block this phone number?";
+"are_you_sure_you_want_to_report" = "Are you sure you want to report this phone number?";
+"not_now" = "Not now";
+"cancle" = "Cancle";
+"are_you_sure_you_want_to_unblock" = "Are you sure you want to unblock this phone number?";

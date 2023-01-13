@@ -26,9 +26,10 @@ target 'KhongLamPhien' do
   pod 'SwiftGen', '~> 6.0'
   pod 'KeychainAccess'
   pod 'PopupDialog', '~> 1.1'
-  pod 'WHTabbar'
+  pod 'WHTabbar', :git => 'https://github.com/AnhNguyen2896/WHTabbar.git', :branch => 'master'
   pod 'Firebase/Analytics'
   pod 'Firebase/DynamicLinks'
+  pod 'Google-Mobile-Ads-SDK'
 
   target 'KhongLamPhienTests' do
     inherit! :search_paths

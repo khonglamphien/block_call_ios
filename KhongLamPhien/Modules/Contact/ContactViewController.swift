@@ -12,6 +12,7 @@ import ContactsUI
 class ContactViewController: BaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var titleLabel: UILabel!
     
     var contacts = [CNContact]()
     
@@ -24,6 +25,7 @@ class ContactViewController: BaseViewController {
     
     private func setupView() {
         tableView.registerCell(BlockTableViewCell.self)
+        titleLabel.text = "contact".localized
     }
     
     func getContactFromCNContact() -> [CNContact] {

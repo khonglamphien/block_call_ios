@@ -33,20 +33,21 @@ class PopupUnblockViewController: BaseViewController {
         addObserver()
         
         if typeScreen == .block {
-            descriptionLabel.text = "Are you sure you want to block this phone number?"
+            descriptionLabel.text = "are_you_sure_you_want_to_block".localized
             phoneNumberLabel.text = numberBlock
-            cancelButton.setTitle("Not now", for: .normal)
-            blockButton.setTitle("Block", for: .normal)
+            cancelButton.setTitle("not_now".localized, for: .normal)
+            blockButton.setTitle("block".localized, for: .normal)
             blockButton.backgroundColor = #colorLiteral(red: 0.8937208056, green: 0.3449975252, blue: 0.3410580158, alpha: 1)
             blockButton.setTitleColor(.white, for: .normal)
         } else if typeScreen == .report {
-            descriptionLabel.text = "Are you sure you want to report this phone number?"
+            descriptionLabel.text = "are_you_sure_you_want_to_report".localized
             phoneNumberLabel.text = numberBlock
-            cancelButton.setTitle("Cancel", for: .normal)
-            blockButton.setTitle("Report", for: .normal)
+            cancelButton.setTitle("cancle".localized, for: .normal)
+            blockButton.setTitle("report".localized, for: .normal)
             blockButton.backgroundColor = #colorLiteral(red: 0.8937208056, green: 0.3449975252, blue: 0.3410580158, alpha: 1)
             blockButton.setTitleColor(.white, for: .normal)
         } else {
+            descriptionLabel.text = "are_you_sure_you_want_to_unblock".localized
             phoneNumberLabel.text = listBlock[indexRemove]
         }
     }
