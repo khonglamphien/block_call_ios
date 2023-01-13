@@ -77,14 +77,14 @@ class CallDirectoryHandler: CXCallDirectoryProvider {
     }
     
     func updateBlockedContactsList(contacts: [String]) {
-        let defaults = UserDefaults(suiteName: "group.bcs.kuhb")
+        let defaults = UserDefaults(suiteName: "group.com.callblock.pro")
         defaults?.removeObject(forKey: "blockList")
         defaults?.set(contacts, forKey: "blockList")
         defaults?.synchronize()
     }
     
     func getBlockedContacts() -> [String] {
-        let defaults = UserDefaults(suiteName: "group.bcs.kuhb")
+        let defaults = UserDefaults(suiteName: "group.com.callblock.pro")
         let blockedContacts = defaults?.value(forKey: "blockList")
         return blockedContacts as! [String]
     }

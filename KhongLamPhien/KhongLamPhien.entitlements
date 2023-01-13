@@ -9,7 +9,7 @@
 	</array>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.bcs.kuhb</string>
+		<string>group.com.callblock.pro</string>
 	</array>
 </dict>
 </plist>
